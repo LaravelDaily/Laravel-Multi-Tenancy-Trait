@@ -2,6 +2,8 @@
 
 This is a demo-project, partly generated with our [QuickAdminPanel.com](https://quickadminpanel.com), to show you how easy it is to add multi-tenancy, so every user would see only the entries they created.
 
+This project was created during live-coding video: [view on YouTube](https://youtu.be/nCiNqboYFVQ)
+
 The whole "magic" is in this trait: __app/Traits/Multitenantable.php__:
 
 ```
