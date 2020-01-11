@@ -13,9 +13,7 @@ trait Multitenantable {
                 $model->created_by_user_id = auth()->id();
             });
             static::addGlobalScope('created_by_user_id', function (Builder $builder) {
-                if (auth()->check()) {
                     return $builder->where('created_by_user_id', auth()->id());
-                }
             });
         }
 
